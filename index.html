@@ -1,0 +1,1695 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Pracownia Jubilerska Tomasz Miernik — Łeba</title>
+  <meta name="description" content="Rodzinna pracownia jubilerska z ponad 30-letnią tradycją w Łebie. Srebro, złoto, bursztyn, kamienie naturalne, naprawy, biżuteria na zamówienie oraz skup metali i bursztynu." />
+  <meta property="og:title" content="Pracownia Jubilerska Tomasz Miernik — Łeba" />
+  <meta property="og:description" content="Rodzinna pracownia jubilerska z ponad 30-letnią tradycją w Łebie. Srebro, złoto, bursztyn, kamienie naturalne, naprawy i biżuteria na zamówienie." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/jpeg" href="https://i.ibb.co/YFxfs8mp/784373856-122097088629456695-2140157622547124564-n.jpg" />
+  
+  <!-- Preload critical brand logo for instant loading -->
+  <link rel="preload" as="image" href="https://i.ibb.co/YFxfs8mp/784373856-122097088629456695-2140157622547124564-n.jpg" />
+  
+  <!-- Google Fonts with Latin-ext -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-cream: #fbf6f3;
+      --text-charcoal: #282724;
+      --text-muted: #5f5c56;
+      --bg-charcoal: #282724;
+      --text-light: #fbf6f3;
+      --gold-accent: #c5a46d;
+      --gold-light: #dfc89d;
+      --gold-soft: rgba(197, 164, 109, 0.22);
+      --border-cream: rgba(95, 92, 86, 0.18);
+      --border-dark: rgba(251, 246, 243, 0.15);
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    /* Reset & Zero-Overflow Foundation */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      background-color: var(--bg-cream);
+      color: var(--text-charcoal);
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100vw;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-cream);
+      color: var(--text-charcoal);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100vw;
+      position: relative;
+    }
+
+    /* Safe padding for mobile sticky action bar */
+    @media (max-width: 768px) {
+      body {
+        padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+      }
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, .font-serif {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      text-wrap: balance;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      overflow-wrap: break-word;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Containers */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: clamp(1rem, 4vw, 1.5rem);
+      padding-right: clamp(1rem, 4vw, 1.5rem);
+    }
+
+    .section {
+      padding-top: clamp(4rem, 8vw, 6rem);
+      padding-bottom: clamp(4rem, 8vw, 6rem);
+      position: relative;
+    }
+
+    .section-cream {
+      background-color: var(--bg-cream);
+      color: var(--text-charcoal);
+    }
+
+    .section-charcoal {
+      background-color: var(--bg-charcoal);
+      color: var(--text-light);
+    }
+    .section-charcoal p {
+      color: rgba(251, 246, 243, 0.82);
+    }
+
+    /* Refined Diamond Ornament */
+    .ornament-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      margin: 1.75rem auto;
+      max-width: 240px;
+    }
+    .ornament-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, currentColor, transparent);
+      opacity: 0.3;
+    }
+    .ornament-diamond {
+      width: 8px;
+      height: 8px;
+      border: 1px solid var(--gold-accent);
+      transform: rotate(45deg);
+      background-color: transparent;
+      box-shadow: 0 0 6px var(--gold-soft);
+      animation: diamondPulse 4s ease-in-out infinite;
+    }
+
+    @keyframes diamondPulse {
+      0%, 100% { transform: rotate(45deg) scale(1); opacity: 0.85; }
+      50% { transform: rotate(45deg) scale(1.15); opacity: 1; box-shadow: 0 0 10px var(--gold-soft); }
+    }
+
+    /* Buttons with subtle shimmer animation */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      padding: 0.85rem 1.65rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      transform: translateZ(0);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 40%;
+      height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+      transform: rotate(25deg);
+      transition: none;
+      pointer-events: none;
+    }
+    .btn:hover::after {
+      left: 130%;
+      transition: left 0.75s ease-in-out;
+    }
+
+    .btn-charcoal {
+      background-color: var(--bg-charcoal);
+      color: var(--text-light);
+      border: 1px solid var(--bg-charcoal);
+      box-shadow: 0 4px 12px rgba(40, 39, 36, 0.1);
+    }
+    .btn-charcoal:hover {
+      background-color: #3b3935;
+      border-color: var(--gold-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--gold-soft);
+    }
+
+    .btn-cream {
+      background-color: var(--bg-cream);
+      color: var(--text-charcoal);
+      border: 1px solid var(--bg-cream);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .btn-cream:hover {
+      background-color: #ffffff;
+      border-color: var(--gold-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--gold-soft);
+    }
+
+    .btn-outline-charcoal {
+      background-color: transparent;
+      color: var(--text-charcoal);
+      border: 1px solid var(--border-cream);
+    }
+    .btn-outline-charcoal:hover {
+      border-color: var(--gold-accent);
+      color: var(--text-charcoal);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px var(--gold-soft);
+    }
+
+    .btn-outline-cream {
+      background-color: transparent;
+      color: var(--text-light);
+      border: 1px solid var(--border-dark);
+    }
+    .btn-outline-cream:hover {
+      border-color: var(--gold-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px var(--gold-soft);
+    }
+
+    /* Top Navigation Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background-color: rgba(251, 246, 243, 0.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-cream);
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .site-header.scrolled {
+      box-shadow: 0 4px 20px rgba(40, 39, 36, 0.05);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4.5rem;
+      gap: 1rem;
+    }
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-family: var(--font-serif);
+      font-size: clamp(1.15rem, 3.5vw, 1.35rem);
+      font-weight: 600;
+      color: var(--text-charcoal);
+      min-width: 0;
+    }
+    .brand-mark span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .brand-avatar {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--gold-accent);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      position: relative;
+      padding-bottom: 0.25rem;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 1.5px;
+      background-color: var(--gold-accent);
+      transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-link:hover {
+      color: var(--text-charcoal);
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .desktop-call-btn {
+      display: inline-flex;
+    }
+
+    .hamburger-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-cream);
+      border-radius: 6px;
+      padding: 0.55rem;
+      cursor: pointer;
+      color: var(--text-charcoal);
+      flex-shrink: 0;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+    .hamburger-btn:hover {
+      border-color: var(--gold-accent);
+      background-color: rgba(197, 164, 109, 0.08);
+    }
+
+    /* Mobile Full-Screen Overlay Navigation */
+    .mobile-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: var(--bg-charcoal);
+      color: var(--text-light);
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.35s;
+    }
+    .mobile-overlay.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    .mobile-close-btn {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: none;
+      border: 1px solid var(--border-dark);
+      border-radius: 6px;
+      color: var(--text-light);
+      padding: 0.6rem;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+    }
+    .mobile-close-btn:hover {
+      border-color: var(--gold-accent);
+    }
+    .mobile-nav-list {
+      list-style: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 320px;
+    }
+    .mobile-nav-link {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      color: var(--text-light);
+      display: block;
+      padding: 0.25rem;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    .mobile-nav-link:hover, .mobile-nav-link:active {
+      color: var(--gold-accent);
+      transform: translateX(4px);
+    }
+
+    /* Sticky Call Button on Mobile Screen Bottom */
+    .sticky-mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 85;
+      padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px)) 1rem;
+      background: rgba(40, 39, 36, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(197, 164, 109, 0.3);
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
+    }
+    .sticky-mobile-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      width: 100%;
+      padding: 0.85rem 1.25rem;
+      background: linear-gradient(135deg, #c5a46d 0%, #b8965f 100%);
+      color: #1f1e1c;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .sticky-mobile-cta a:active {
+      transform: scale(0.98);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .desktop-call-btn {
+        display: none !important;
+      }
+      .hamburger-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .sticky-mobile-cta {
+        display: block;
+      }
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      padding-top: clamp(4rem, 8vw, 6.5rem);
+      padding-bottom: clamp(4.5rem, 9vw, 7.5rem);
+      text-align: center;
+      background-color: var(--bg-cream);
+      border-bottom: 1px solid var(--border-cream);
+      overflow: hidden;
+    }
+    .hero-bg-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      height: 600px;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(197, 164, 109, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .hero-eyebrow {
+      font-size: clamp(0.75rem, 2vw, 0.85rem);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+    .hero-title {
+      font-size: clamp(2.3rem, 5.5vw, 4.2rem);
+      line-height: 1.15;
+      color: var(--text-charcoal);
+      margin-bottom: 0.75rem;
+    }
+    .hero-tagline {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+      color: var(--text-charcoal);
+      margin-bottom: 1rem;
+    }
+    .hero-heritage {
+      font-size: clamp(1rem, 2.5vw, 1.15rem);
+      letter-spacing: 0.03em;
+      color: var(--text-muted);
+      margin-bottom: 2.25rem;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto clamp(2.5rem, 5vw, 3.75rem) auto;
+    }
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-accent);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.85rem);
+      line-height: 1.2;
+      margin-bottom: 0.85rem;
+    }
+
+    /* Responsive Grids */
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.75rem;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(1.75rem, 4vw, 3rem);
+      align-items: center;
+    }
+
+    /* Cards */
+    .craft-card {
+      border: 1px solid var(--border-cream);
+      border-radius: 8px;
+      padding: clamp(1.75rem, 3vw, 2.25rem) 1.5rem;
+      background-color: #ffffff;
+      text-align: center;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .craft-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold-accent), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .craft-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold-accent);
+      box-shadow: 0 12px 30px rgba(40, 39, 36, 0.08);
+    }
+    .craft-card:hover::before {
+      opacity: 1;
+    }
+
+    .section-charcoal .craft-card {
+      background-color: rgba(255, 255, 255, 0.035);
+      border-color: var(--border-dark);
+    }
+    .section-charcoal .craft-card:hover {
+      background-color: rgba(255, 255, 255, 0.07);
+      border-color: var(--gold-accent);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .card-icon-wrap {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--gold-accent);
+      border-radius: 6px;
+      color: var(--gold-accent);
+      background: rgba(197, 164, 109, 0.05);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+    }
+    .craft-card:hover .card-icon-wrap {
+      transform: scale(1.08) rotate(3deg);
+      background-color: rgba(197, 164, 109, 0.15);
+    }
+    .card-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: inherit;
+    }
+    .card-text {
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    /* Photo Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr 0.85fr 1.15fr;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-dark);
+      background-color: #1a1918;
+      aspect-ratio: 4 / 5;
+      cursor: pointer;
+      transform: translateZ(0);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+      filter: brightness(0.95);
+      decoding: async;
+    }
+    .gallery-item:hover {
+      border-color: var(--gold-accent);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 15px var(--gold-soft);
+    }
+    .gallery-item:hover .gallery-img {
+      transform: scale(1.05);
+      filter: brightness(1.04);
+    }
+
+    /* Subtle hover magnifying overlay indicator */
+    .gallery-item-action {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle, rgba(197, 164, 109, 0.15) 0%, rgba(20, 19, 18, 0.4) 100%);
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .gallery-item:hover .gallery-item-action {
+      opacity: 1;
+    }
+    .gallery-zoom-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(40, 39, 36, 0.85);
+      border: 1px solid var(--gold-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-accent);
+      transform: scale(0.85);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .gallery-item:hover .gallery-zoom-badge {
+      transform: scale(1);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(18, 17, 16, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .lightbox-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .lightbox-content {
+      position: relative;
+      max-width: 90vw;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 84vh;
+      border-radius: 6px;
+      border: 1px solid var(--gold-accent);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+      object-fit: contain;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: -3rem;
+      right: 0;
+      background: none;
+      border: 1px solid var(--border-dark);
+      color: var(--text-light);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .lightbox-close:hover {
+      border-color: var(--gold-accent);
+      color: var(--gold-accent);
+    }
+
+    /* Sales and LIVE Section */
+    .sales-box {
+      border: 1px solid var(--border-cream);
+      border-radius: 8px;
+      background-color: #ffffff;
+      padding: clamp(1.75rem, 4vw, 2.75rem);
+      box-shadow: 0 4px 20px rgba(40, 39, 36, 0.04);
+      position: relative;
+      overflow: hidden;
+    }
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #b54734;
+      margin-bottom: 1rem;
+      background: rgba(181, 71, 52, 0.08);
+      padding: 0.35rem 0.75rem;
+      border-radius: 4px;
+    }
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #b54734;
+      display: inline-block;
+      animation: livePulse 1.8s ease-in-out infinite;
+    }
+
+    @keyframes livePulse {
+      0% { transform: scale(0.95); opacity: 0.7; box-shadow: 0 0 0 0 rgba(181, 71, 52, 0.5); }
+      70% { transform: scale(1.15); opacity: 1; box-shadow: 0 0 0 6px rgba(181, 71, 52, 0); }
+      100% { transform: scale(0.95); opacity: 0.7; box-shadow: 0 0 0 0 rgba(181, 71, 52, 0); }
+    }
+
+    /* Skup / Buyback Section */
+    .buyback-container {
+      border: 1px solid var(--border-dark);
+      border-radius: 8px;
+      padding: clamp(2rem, 5vw, 3.5rem) clamp(1.25rem, 4vw, 3rem);
+      background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .buyback-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(197, 164, 109, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Hours Section */
+    .hours-table {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      border: 1px solid var(--border-cream);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #ffffff;
+      box-shadow: 0 4px 16px rgba(40, 39, 36, 0.03);
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.85rem 1.35rem;
+      border-bottom: 1px solid rgba(95, 92, 86, 0.1);
+      transition: background-color 0.2s ease;
+    }
+    .hours-row:last-child {
+      border-bottom: none;
+    }
+    .hours-row:hover {
+      background-color: rgba(197, 164, 109, 0.05);
+    }
+    .hours-day {
+      font-weight: 500;
+      color: var(--text-charcoal);
+    }
+    .hours-time {
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* Contact & Location */
+    .contact-card {
+      border: 1px solid var(--border-cream);
+      border-radius: 8px;
+      background-color: #ffffff;
+      padding: clamp(1.75rem, 4vw, 2.5rem);
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      box-shadow: 0 4px 20px rgba(40, 39, 36, 0.04);
+      width: 100%;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .contact-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      margin-top: 0.2rem;
+      color: var(--gold-accent);
+    }
+    .contact-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 0.2rem;
+    }
+    .contact-value {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--text-charcoal);
+    }
+    .contact-value:hover {
+      color: var(--gold-accent);
+    }
+
+    .social-buttons {
+      display: flex;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+      margin-top: 0.4rem;
+    }
+
+    /* Google Maps Wrapper */
+    .map-frame-wrapper {
+      border-radius: 8px;
+      border: 1px solid var(--border-cream);
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      background-color: #ece7e2;
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      position: relative;
+    }
+    .map-frame-wrapper iframe {
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 380px;
+      display: block;
+      border: 0;
+    }
+
+    /* Footer */
+    .site-footer {
+      background-color: #1f1e1c;
+      color: var(--text-light);
+      border-top: 1px solid rgba(251, 246, 243, 0.1);
+      padding-top: clamp(3.5rem, 6vw, 4.5rem);
+      padding-bottom: clamp(2.5rem, 5vw, 3.5rem);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      margin-bottom: 0.85rem;
+      color: var(--text-light);
+    }
+    .footer-tagline {
+      font-style: italic;
+      color: var(--gold-accent);
+      margin-bottom: 1rem;
+    }
+    .footer-col-title {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--gold-accent);
+      margin-bottom: 1.15rem;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .footer-links a:hover {
+      color: var(--gold-accent);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(251, 246, 243, 0.08);
+      padding-top: 1.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: rgba(251, 246, 243, 0.55);
+    }
+
+    /* Fade & Reveal Animations */
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .fade-in-section {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .ornament-diamond {
+        animation: none !important;
+      }
+    }
+
+    /* Tablet & Mobile Breakpoints */
+    @media (max-width: 1024px) {
+      .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .grid-3, .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.85rem;
+      }
+      .gallery-item {
+        aspect-ratio: 1 / 1;
+      }
+      .map-frame-wrapper {
+        min-height: 300px;
+        height: 320px;
+      }
+      .hours-row {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+      }
+      .btn {
+        width: 100%;
+      }
+      .hero-actions .btn {
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .gallery-item {
+        aspect-ratio: 4 / 3;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#" class="brand-mark" aria-label="Strona główna — Pracownia Jubilerska Tomasz Miernik">
+        <img class="brand-avatar" src="https://i.ibb.co/YFxfs8mp/784373856-122097088629456695-2140157622547124564-n.jpg" alt="Znak mistrzowski Pracowni Jubilerskiej Tomasz Miernik" width="40" height="40" fetchpriority="high" />
+        <span>Pracownia Jubilerska</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Główna nawigacja witryny">
+        <ul class="nav-links">
+          <li><a href="#materialy" class="nav-link">Materiały</a></li>
+          <li><a href="#uslugi" class="nav-link">Usługi</a></li>
+          <li><a href="#galeria" class="nav-link">Kolekcja</a></li>
+          <li><a href="#sprzedaz" class="nav-link">Sprzedaż & LIVE</a></li>
+          <li><a href="#skup" class="nav-link">Skup</a></li>
+          <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Call Action Button (Hidden on Mobile) -->
+      <div class="desktop-call-btn">
+        <a href="tel:888649148" class="btn btn-outline-charcoal" style="padding: 0.6rem 1.15rem; font-size: 0.82rem;">
+          <!-- Lucide: Phone -->
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          888 649 148
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="openMenuBtn" aria-label="Otwórz menu nawigacji" aria-expanded="false">
+        <!-- Lucide: Menu -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Full-Screen Overlay Navigation -->
+  <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-modal="true" aria-label="Menu mobilne">
+    <button class="mobile-close-btn" id="closeMenuBtn" aria-label="Zamknij menu">
+      <!-- Lucide: X -->
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <ul class="mobile-nav-list">
+      <li><a href="#materialy" class="mobile-nav-link">Materiały</a></li>
+      <li><a href="#uslugi" class="mobile-nav-link">Usługi</a></li>
+      <li><a href="#galeria" class="mobile-nav-link">Kolekcja</a></li>
+      <li><a href="#sprzedaz" class="mobile-nav-link">Sprzedaż & LIVE</a></li>
+      <li><a href="#skup" class="mobile-nav-link">Skup kruszców</a></li>
+      <li><a href="#godziny" class="mobile-nav-link">Godziny otwarcia</a></li>
+      <li><a href="#kontakt" class="mobile-nav-link">Kontakt i dojazd</a></li>
+    </ul>
+  </div>
+
+  <main id="glowna-tresc">
+    <!-- Hero Section -->
+    <section class="hero-section section-cream">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+      <div class="container hero-inner fade-in-section">
+        <p class="hero-eyebrow">Pracownia Jubilerska Tomasz Miernik</p>
+        <h1 class="hero-title">Tradycja mistrzowskiego rzemiosła</h1>
+        <div class="hero-tagline">„Tu biżuteria dostaje duszę.”</div>
+        <div class="ornament-divider" aria-hidden="true">
+          <span class="ornament-line"></span>
+          <span class="ornament-diamond"></span>
+          <span class="ornament-line"></span>
+        </div>
+        <p class="hero-heritage">Rodzinna pracownia — ponad 30 lat — Łeba</p>
+        <div class="hero-actions">
+          <a href="tel:888649148" class="btn btn-charcoal">
+            <!-- Lucide: PhoneCall -->
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14 1.5a7 7 0 0 1 7 7"/><path d="M14 5.5a3 3 0 0 1 3 3"/></svg>
+            Zadzwoń do pracowni
+          </a>
+          <a href="https://www.facebook.com/pracowniaasiitomka/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-charcoal">
+            <!-- Lucide: Facebook -->
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Odwiedź nasz Facebook
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section id="materialy" class="section section-cream">
+      <div class="container">
+        <div class="section-header fade-in-section">
+          <span class="section-kicker">
+            <!-- Lucide: Sparkles -->
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+            Fundament naszego kunsztu
+          </span>
+          <h2 class="section-title">Szlachetne materiały</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-diamond"></span>
+            <span class="ornament-line"></span>
+          </div>
+          <p>Tworzymy wyłącznie z surowców najwyższej próby. Każdy kamień, bryłka bałtyckiego bursztynu i kruszec są selekcjonowane z pieczołowitością, aby zachwycać trwałością i naturalnym pięknem przez pokolenia.</p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Silver -->
+          <div class="craft-card fade-in-section">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <!-- Lucide: Sparkles -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+            </div>
+            <h3 class="card-title">Srebro</h3>
+            <p class="card-text">Wysokiej próby srebro poddane precyzyjnej obróbce i polerowaniu, stanowiące ponadczasową oprawę dla autorskich form jubilerskich.</p>
+          </div>
+
+          <!-- Gold -->
+          <div class="craft-card fade-in-section">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <!-- Lucide: ShieldCheck -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3 class="card-title">Złoto</h3>
+            <p class="card-text">Klasyczne złoto żółte, białe oraz różowe w starannie dobranych próbach, łączące wytworność, szlachetny blask i wieloletnią trwałość.</p>
+          </div>
+
+          <!-- Amber -->
+          <div class="craft-card fade-in-section">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <!-- Lucide: Gem -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg>
+            </div>
+            <h3 class="card-title">Bursztyn</h3>
+            <p class="card-text">Autentyczny bursztyn bałtycki o unikatowych odcieniach, będący symbolem nadmorskiego wybrzeża i sercem łebskiej tradycji jubilerskiej.</p>
+          </div>
+
+          <!-- Gemstones -->
+          <div class="craft-card fade-in-section">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <!-- Lucide: Compass / Diamond -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <h3 class="card-title">Kamienie naturalne</h3>
+            <p class="card-text">Wyselekcjonowane minerały i kamienie szlachetne o głębokiej barwie, zintegrowane w oprawy podkreślające ich wewnętrzny blask i strukturę.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="uslugi" class="section section-charcoal">
+      <div class="container">
+        <div class="section-header fade-in-section">
+          <span class="section-kicker">
+            <!-- Lucide: Hammer -->
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.242-1.758H11a2 2 0 0 0-2 2v1.5a2 2 0 0 1-.586 1.414l-.914.914"/></svg>
+            Tradycja i precyzja
+          </span>
+          <h2 class="section-title">Nasze usługi jubilerskie</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-diamond"></span>
+            <span class="ornament-line"></span>
+          </div>
+          <p>W naszym warsztacie w Łebie łączymy tradycyjne techniki złotnicze z nowoczesnym sprzętem rzemieślniczym, dbając o każdy szczegół powierzonej nam biżuterii.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Repairs -->
+          <div class="craft-card fade-in-section">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <!-- Lucide: Hammer -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.242-1.758H11a2 2 0 0 0-2 2v1.5a2 2 0 0 1-.586 1.414l-.914.914"/></svg>
+            </div>
+            <h3 class="card-title">Naprawy</h3>
+            <p class="card-text">Profesjonalna naprawa uszkodzonych łańcuszków, bransolet, zapięć i pierścionków, w tym precyzyjna zmiana rozmiaru oraz oprawa wypadniętych kamieni.</p>
+          </div>
+
+          <!-- Restorations -->
+          <div class="craft-card fade-in-section">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <!-- Lucide: RefreshCw -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+            </div>
+            <h3 class="card-title">Renowacje</h3>
+            <p class="card-text">Przywracanie dawnego blasku wielopokoleniowym pamiątkom rodzinnym, czyszczenie ultradźwiękowe, rodowanie oraz usuwanie rys i śladów upływu czasu.</p>
+          </div>
+
+          <!-- Custom-made -->
+          <div class="craft-card fade-in-section">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <!-- Lucide: PenTool -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            </div>
+            <h3 class="card-title">Biżuteria na zamówienie</h3>
+            <p class="card-text">Indywidualne projekty tworzone wedle osobistych marzeń klienta, od unikatowych obrączek ślubnych po niepowtarzalne zawieszki i pierścienie.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jewelry Photos Showcase (No captions, interactive lightbox zoom) -->
+    <section id="galeria" class="section section-charcoal" style="padding-top: 1rem; border-top: 1px solid var(--border-dark);">
+      <div class="container">
+        <div class="section-header fade-in-section">
+          <span class="section-kicker">
+            <!-- Lucide: Eye -->
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            Autorska galeria
+          </span>
+          <h2 class="section-title">Kunszt zaklęty w detalach</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-diamond"></span>
+            <span class="ornament-line"></span>
+          </div>
+          <p>Oto wybrane realizacje z naszej pracowni — biżuteria tworzona z pasją i szacunkiem do rzemiosła. Kliknij dowolną fotografię, aby powiększyć detal.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in-section" data-img="https://i.ibb.co/9HTtrKPK/825270205-18064992026611717-5280509130979991182-n.jpg" role="button" tabindex="0" aria-label="Powiększ zdjęcie wyrobu jubilerskiego">
+            <img class="gallery-img" src="https://i.ibb.co/9HTtrKPK/825270205-18064992026611717-5280509130979991182-n.jpg" alt="Ręcznie wykonana biżuteria artystyczna z pracowni w Łebie" loading="lazy" decoding="async" width="500" height="600" />
+            <div class="gallery-item-action" aria-hidden="true">
+              <div class="gallery-zoom-badge">
+                <!-- Lucide: ZoomIn -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item fade-in-section" data-img="https://i.ibb.co/vvKcY27R/830985903-122117665725456695-7482356130163597602-n.jpg" role="button" tabindex="0" aria-label="Powiększ zdjęcie wyrobu jubilerskiego">
+            <img class="gallery-img" src="https://i.ibb.co/vvKcY27R/830985903-122117665725456695-7482356130163597602-n.jpg" alt="Artystyczna biżuteria ze srebra i kamieni szlachetnych" loading="lazy" decoding="async" width="500" height="600" />
+            <div class="gallery-item-action" aria-hidden="true">
+              <div class="gallery-zoom-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item fade-in-section" data-img="https://i.ibb.co/Kj70kvpt/829967969-122117665707456695-5367744624111058318-n.jpg" role="button" tabindex="0" aria-label="Powiększ zdjęcie wyrobu jubilerskiego">
+            <img class="gallery-img" src="https://i.ibb.co/Kj70kvpt/829967969-122117665707456695-5367744624111058318-n.jpg" alt="Bursztyn i naturalne minerały w tradycyjnej oprawie" loading="lazy" decoding="async" width="500" height="600" />
+            <div class="gallery-item-action" aria-hidden="true">
+              <div class="gallery-zoom-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item fade-in-section" data-img="https://i.ibb.co/gL84jF6Y/830028061-122117497335456695-5634934944838984617-n.jpg" role="button" tabindex="0" aria-label="Powiększ zdjęcie wyrobu jubilerskiego">
+            <img class="gallery-img" src="https://i.ibb.co/gL84jF6Y/830028061-122117497335456695-5634934944838984617-n.jpg" alt="Autorskie wzornictwo jubilerskie z ponad 30-letnią tradycją" loading="lazy" decoding="async" width="500" height="600" />
+            <div class="gallery-item-action" aria-hidden="true">
+              <div class="gallery-zoom-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Zoom Modal Container -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Podgląd powiększonego zdjęcia">
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="closeLightboxBtn" aria-label="Zamknij podgląd">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+        <img class="lightbox-img" id="lightboxImage" src="" alt="Powiększone zdjęcie wyrobu jubilerskiego" />
+      </div>
+    </div>
+
+    <!-- Sales Channels & Facebook LIVE -->
+    <section id="sprzedaz" class="section section-cream">
+      <div class="container">
+        <div class="grid-2">
+          <div class="fade-in-section">
+            <span class="section-kicker">
+              <!-- Lucide: ShoppingBag -->
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              Dostępność i wygoda
+            </span>
+            <h2 class="section-title">Sprzedaż stacjonarna oraz internetowa</h2>
+            <div class="ornament-divider" style="margin-left: 0;" aria-hidden="true">
+              <span class="ornament-line"></span>
+              <span class="ornament-diamond"></span>
+              <span class="ornament-line"></span>
+            </div>
+            <p style="margin-bottom: 1.25rem;">Serdecznie zapraszamy do naszej stacjonarnej pracowni w Łebie przy ulicy Wojska Polskiego 13, gdzie można osobiście przymierzyć biżuterię, porozmawiać o indywidualnym projekcie oraz obejrzeć gotowe kolekcje.</p>
+            <p style="margin-bottom: 2rem;">Dla klientów z całej Polski prowadzimy również sprawną sprzedaż wysyłkową. Zapewniamy bezpieczne pakowanie i ubezpieczoną przesyłkę prosto pod wskazany adres.</p>
+            <a href="tel:888649148" class="btn btn-charcoal">
+              <!-- Lucide: Phone -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Skontaktuj się w sprawie zamówienia
+            </a>
+          </div>
+
+          <div class="sales-box fade-in-section">
+            <div class="live-badge">
+              <span class="live-dot"></span>
+              Transmisje na żywo & oferty
+            </div>
+            <h3 style="font-size: clamp(1.5rem, 3vw, 1.85rem); margin-bottom: 1rem; color: var(--text-charcoal);">LIVE sprzedażowe na Facebooku</h3>
+            <p style="margin-bottom: 1.25rem; font-size: 1rem;">Regularnie prowadzimy transmisje sprzedażowe na żywo na naszym profilu Facebook. To wyjątkowa okazja, aby zobaczyć wyroby z bliska w naturalnym świetle, poznać ich parametry oraz dokonać zakupu z natychmiastową rezerwacją.</p>
+            <p style="margin-bottom: 1.75rem; font-size: 1rem;">Na Facebooku publikujemy także bieżące oferty specjalne, nowości z pracowni oraz unikatowe egzemplarze dostępne w pojedynczych sztukach.</p>
+            <a href="https://www.facebook.com/pracowniaasiitomka/" target="_blank" rel="noopener noreferrer" class="btn btn-charcoal">
+              <!-- Lucide: Video -->
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+              Dołącz do naszych transmisji na Facebooku
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buyback Service Section -->
+    <section id="skup" class="section section-charcoal">
+      <div class="container">
+        <div class="buyback-container fade-in-section">
+          <div style="max-width: 820px; margin: 0 auto; text-align: center;">
+            <span class="section-kicker">
+              <!-- Lucide: Scale / Coins -->
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+              Uczciwa wycena i gotówka od ręki
+            </span>
+            <h2 class="section-title">Skup złota, srebra i bursztynu</h2>
+            <div class="ornament-divider" aria-hidden="true">
+              <span class="ornament-line"></span>
+              <span class="ornament-diamond"></span>
+              <span class="ornament-line"></span>
+            </div>
+            <p style="margin-bottom: 1.5rem; font-size: 1.08rem;">Świadczymy profesjonalną usługę skupu złota, srebra oraz naturalnego bursztynu od klientów indywidualnych. Jeżeli posiadasz niepotrzebną, uszkodzoną lub pojedynczą biżuterię, monety, sztabki bądź surowy bursztyn — zapraszamy do naszej pracowni.</p>
+            <p style="margin-bottom: 2.25rem;">Gwarantujemy rzetelną weryfikację próby przy użyciu specjalistycznych metod probierczych, przejrzystą wycenę opartą na aktualnych notowaniach oraz natychmiastowe rozliczenie transakcji.</p>
+            <div style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap;">
+              <a href="tel:888649148" class="btn btn-cream">
+                <!-- Lucide: Phone -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Zapytaj o aktualne ceny skupu
+              </a>
+              <a href="#kontakt" class="btn btn-outline-cream">
+                <!-- Lucide: MapPin -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Sprawdź lokalizację pracowni
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours of Operation -->
+    <section id="godziny" class="section section-cream">
+      <div class="container">
+        <div class="section-header fade-in-section">
+          <span class="section-kicker">
+            <!-- Lucide: Clock -->
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Czekamy na Ciebie
+          </span>
+          <h2 class="section-title">Godziny otwarcia</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-diamond"></span>
+            <span class="ornament-line"></span>
+          </div>
+          <p>Zapraszamy do naszego lokalu w Łebie przez cały tydzień. Jesteśmy do Państwa dyspozycji codziennie w stałych godzinach.</p>
+        </div>
+
+        <div class="fade-in-section">
+          <div class="hours-table">
+            <div class="hours-row">
+              <span class="hours-day">Poniedziałek</span>
+              <span class="hours-time">10:00–21:00</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Wtorek</span>
+              <span class="hours-time">10:00–21:00</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Środa</span>
+              <span class="hours-time">10:00–21:00</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Czwartek</span>
+              <span class="hours-time">10:00–21:00</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Piątek</span>
+              <span class="hours-time">10:00–21:00</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sobota</span>
+              <span class="hours-time">10:00–21:00</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Niedziela</span>
+              <span class="hours-time">10:00–21:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="kontakt" class="section section-cream" style="border-top: 1px solid var(--border-cream);">
+      <div class="container">
+        <div class="section-header fade-in-section">
+          <span class="section-kicker">
+            <!-- Lucide: MapPin -->
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Odwiedź nas w Łebie
+          </span>
+          <h2 class="section-title">Kontakt i lokalizacja</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-diamond"></span>
+            <span class="ornament-line"></span>
+          </div>
+          <p>Pracownia znajduje się w dogodnym punkcie Łeby. Służymy doradztwem telefonicznym, mailowym oraz poprzez media społecznościowe.</p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Contact details card -->
+          <div class="contact-card fade-in-section">
+            <div class="contact-item">
+              <!-- Lucide: MapPin -->
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <div class="contact-label">Adres pracowni</div>
+                <div class="contact-value">ul. Wojska Polskiego 13, Łeba 84-360</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <!-- Lucide: Phone -->
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <div class="contact-label">Telefon kontaktowy</div>
+                <a href="tel:888649148" class="contact-value" style="display: block;">888 649 148</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <!-- Lucide: Mail -->
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <div>
+                <div class="contact-label">Poczta elektroniczna</div>
+                <a href="mailto:pracowniajubilerskaleba@gmail.com" class="contact-value" style="word-break: break-all; font-size: 0.98rem;">pracowniajubilerskaleba@gmail.com</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="contact-label" style="margin-bottom: 0.75rem;">Media społecznościowe i transmisje</div>
+              <div class="social-buttons">
+                <a href="https://www.facebook.com/pracowniaasiitomka/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-charcoal" style="padding: 0.65rem 1.05rem; font-size: 0.8rem;">
+                  <!-- Lucide: Facebook -->
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  Facebook
+                </a>
+                <a href="https://www.instagram.com/pracowniajubilerskaleba" target="_blank" rel="noopener noreferrer" class="btn btn-outline-charcoal" style="padding: 0.65rem 1.05rem; font-size: 0.8rem;">
+                  <!-- Lucide: Instagram -->
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  Instagram
+                </a>
+                <a href="https://www.tiktok.com/@pracowniajubilerskaleba" target="_blank" rel="noopener noreferrer" class="btn btn-outline-charcoal" style="padding: 0.65rem 1.05rem; font-size: 0.8rem;">
+                  <!-- Lucide: Music2 -->
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                  TikTok
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Maps Embed Wrapper Unmodified -->
+          <div class="map-frame-wrapper fade-in-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.398418087151!2d17.55353906278856!3d54.7625994677072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fe79ffff059989%3A0xe3b378109abda30f!2sPracownia%20Jubilerska%20Tomasz%20Miernik!5e1!3m2!1spl!2spl!4v1791102800582!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Pracownia Jubilerska Tomasz Miernik</div>
+          <div class="footer-tagline">„Tu biżuteria dostaje duszę.”</div>
+          <p style="font-size: 0.95rem; line-height: 1.65; max-width: 380px;">Rodzinna pracownia jubilerska z ponad 30-letnią historią w Łebie. Z miłością do piękna szlachetnych kruszców, bursztynu i naturalnych kamieni.</p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Kontakt i wizyta</div>
+          <ul class="footer-links">
+            <li style="color: rgba(251, 246, 243, 0.85);">ul. Wojska Polskiego 13</li>
+            <li style="color: rgba(251, 246, 243, 0.85);">84-360 Łeba, Polska</li>
+            <li>
+              <a href="tel:888649148" style="color: var(--gold-accent); display: inline-flex; align-items: center; gap: 0.4rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                tel. 888 649 148
+              </a>
+            </li>
+            <li>
+              <a href="mailto:pracowniajubilerskaleba@gmail.com" style="color: rgba(251, 246, 243, 0.85); font-size: 0.9rem; word-break: break-all;">
+                pracowniajubilerskaleba@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Śledź naszą twórczość</div>
+          <ul class="footer-links">
+            <li>
+              <a href="https://www.facebook.com/pracowniaasiitomka/" target="_blank" rel="noopener noreferrer">
+                Facebook — transmisje LIVE i oferty
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/pracowniajubilerskaleba" target="_blank" rel="noopener noreferrer">
+                Instagram — galeria prac
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@pracowniajubilerskaleba" target="_blank" rel="noopener noreferrer">
+                TikTok — za kulisami pracowni
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Pracownia Jubilerska Tomasz Miernik. Wszelkie prawa zastrzeżone.</div>
+        <div>Ponad 30 lat tradycji złotniczej w Łebie.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Action Button (Phone call, bottom of mobile screen) -->
+  <aside class="sticky-mobile-cta" aria-label="Szybki kontakt telefoniczny">
+    <a href="tel:888649148">
+      <!-- Lucide: PhoneCall -->
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14 1.5a7 7 0 0 1 7 7"/><path d="M14 5.5a3 3 0 0 1 3 3"/></svg>
+      Zadzwoń do pracowni: 888 649 148
+    </a>
+  </aside>
+
+  <script>
+    // Header shadow on scroll
+    const siteHeader = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        siteHeader.classList.add('scrolled');
+      } else {
+        siteHeader.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    // Mobile navigation toggle
+    const openMenuBtn = document.getElementById('openMenuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    function openMobileMenu() {
+      if (!mobileOverlay) return;
+      mobileOverlay.classList.add('active');
+      openMenuBtn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      if (!mobileOverlay) return;
+      mobileOverlay.classList.remove('active');
+      openMenuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    if (openMenuBtn) openMenuBtn.addEventListener('click', openMobileMenu);
+    if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMobileMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+
+    // Lightbox Modal for Gallery Images
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const closeLightboxBtn = document.getElementById('closeLightboxBtn');
+
+    galleryItems.forEach(item => {
+      const openLightbox = () => {
+        const imgSrc = item.getAttribute('data-img');
+        if (imgSrc && lightboxImage && lightboxModal) {
+          lightboxImage.src = imgSrc;
+          lightboxModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      };
+
+      item.addEventListener('click', openLightbox);
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox();
+        }
+      });
+    });
+
+    function closeLightbox() {
+      if (!lightboxModal) return;
+      lightboxModal.classList.remove('active');
+      document.body.style.overflow = '';
+      if (lightboxImage) lightboxImage.src = '';
+    }
+
+    if (closeLightboxBtn) closeLightboxBtn.addEventListener('click', closeLightbox);
+    if (lightboxModal) {
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) {
+          closeLightbox();
+        }
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+        closeMobileMenu();
+      }
+    });
+
+    // IntersectionObserver scroll animations
+    const revealElements = document.querySelectorAll('.fade-in-section');
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        root: null,
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      revealElements.forEach(el => observer.observe(el));
+    } else {
+      revealElements.forEach(el => el.classList.add('is-visible'));
+    }
+  </script>
+</body>
+</html>

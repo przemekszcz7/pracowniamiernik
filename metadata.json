@@ -1,0 +1,6 @@
+{
+  "name": "Pracownia Jubilerska Tomasz Miernik — Łeba",
+  "description": "Rodzinna pracownia jubilerska z ponad 30-letnią tradycją w Łebie. Srebro, złoto, bursztyn, kamienie naturalne, naprawy, biżuteria na zamówienie oraz skup metali i bursztynu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
